@@ -1,3 +1,4 @@
+type ccci_mdinit, domain;
 type data_vendor_de_md_file, file_type, data_file_type;
 type mcf_ota_file, file_type, data_file_type;
 

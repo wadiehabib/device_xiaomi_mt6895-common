@@ -1,3 +1,5 @@
+type mtk_default_prop, property_type;
+type wmt_prop, property_type;
 type vendor_audio_data_file, file_type, data_file_type, core_data_file_type;
 type vendor_wifi_vendor_data_file, file_type, data_file_type;
 type charge_log_file, file_type, data_file_type;

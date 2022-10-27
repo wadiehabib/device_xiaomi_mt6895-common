@@ -1,4 +1,5 @@
 type camera_persist_file, file_type;
+type mtk_hal_camera, domain;
 
 type DualCameraCal, domain;
 type DualCameraCal_exec, file_type, exec_type, vendor_file_type;

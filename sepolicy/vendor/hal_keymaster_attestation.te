@@ -1,1 +1,2 @@
+type hal_keymaster_attestation, domain;
 hal_client_domain(hal_keymaster_attestation, hal_keymaster)

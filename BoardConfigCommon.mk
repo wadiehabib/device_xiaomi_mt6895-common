@@ -9,6 +9,8 @@ COMMON_PATH := device/xiaomi/mt6895-common
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+RELAX_USES_LIBRARY_CHECK := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -138,9 +140,10 @@ VENDOR_SECURITY_PATCH := 2021-12-05
 
 # Sepolicy
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-include device/mediatek/sepolicy_vndr/SEPolicy.mk
+#include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
+#BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

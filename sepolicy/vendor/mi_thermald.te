@@ -1,6 +1,7 @@
 type mi_thermald, domain;
 type mi_thermald_exec, exec_type, vendor_file_type, file_type;
 type thermal_data_file, data_file_type, file_type;
+type sysfs_therm, fs_type, sysfs_type;
 
 typeattribute mi_thermald mlstrustedsubject;
 
